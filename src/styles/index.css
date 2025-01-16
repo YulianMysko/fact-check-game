@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Додаткові стилі для PWA */
+@media (display-mode: standalone) {
+
+    /* Стилі для PWA режиму */
+    body {
+        overscroll-behavior-y: contain;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+    }
+}
+
+/* Анімації */
+@keyframes swipeRight {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(150%) rotate(30deg);
+    }
+}
+
+@keyframes swipeLeft {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(-150%) rotate(-30deg);
+    }
+}
+
+.swipe-right {
+    animation: swipeRight 0.5s ease-out forwards;
+}
+
+.swipe-left {
+    animation: swipeLeft 0.5s ease-out forwards;
+}
+
+/* Покращення доступності */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

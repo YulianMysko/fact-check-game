@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Офлайн - Fact Check Game</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Немає з'єднання</h1>
+        <p>Схоже, що ви зараз не маєте доступу до інтернету. Перевірте своє з'єднання та спробуйте ще раз.</p>
+        <button onclick="window.location.reload()">Оновити сторінку</button>
+    </div>
+</body>
+
+</html>
