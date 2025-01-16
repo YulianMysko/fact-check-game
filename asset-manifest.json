@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fact-check-game/static/css/main.154960bb.css",
+    "main.js": "/fact-check-game/static/js/main.a4063d37.js",
+    "index.html": "/fact-check-game/index.html",
+    "main.154960bb.css.map": "/fact-check-game/static/css/main.154960bb.css.map",
+    "main.a4063d37.js.map": "/fact-check-game/static/js/main.a4063d37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.154960bb.css",
+    "static/js/main.a4063d37.js"
+  ]
+}
